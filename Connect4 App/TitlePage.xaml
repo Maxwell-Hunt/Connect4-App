@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Connect4_App.TitlePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Connect4_App"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White"/>
+            <GradientStop Color="Black" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Background>
+
+    <Grid HorizontalAlignment="Center" Margin="50">
+        <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center"  Text="Welcome To Connect 4" FontSize="50"/>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="The Game Is Connect 4. You Know How To Play." FontSize="30"></TextBlock>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Padding="20">
+            <Button Background="Green" VerticalAlignment="Bottom" Margin="0 0 20 0" Content="ENGAGE" FontSize="25" Width="200" Height="100" HorizontalAlignment="Center" Click="Start"></Button>
+            <Button Background="Red" Click="Button_Click" VerticalAlignment="Bottom" FontSize="25" Margin="20 0 0 0" Content="SELF DESTRUCT" Width="200" Height="100" HorizontalAlignment="Center"></Button>
+        </StackPanel>
+    </Grid>
+
+
+</Page>
