@@ -22,6 +22,8 @@ namespace Connect4_App.Core
         public static int width = 7;
         public static int height = 6;
 
+        //This is a comment for Illustrating GIT
+
         public static List<List<Cell>> cells = new List<List<Cell>>();
 
         public static void PopulateCells()
